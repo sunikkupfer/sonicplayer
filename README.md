@@ -5,7 +5,7 @@ Sonic Player browser extension for listening to and controlling music playback o
 ## Note
 This is work in progress and not ready for production use.
 
-# Browser support
+## Browser support
 This browser extension is aimed at chrome at firefox users. It is built with the WebExtensions API cross-browser technology and makes use of [mozilla/webextension-polyfill](https://github.com/mozilla/webextension-polyfill).
 
 ## Contributing
