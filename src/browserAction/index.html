@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link href="index.css" rel="stylesheet" />
-  </head>
-  <body>
-    <p id="songtitle">The beautiful song</p>
-    <p id="songartist">The good artist</p>
-    <p id="songalbum">The fine album</p>
-    <script src="index.js"></script>
-  </body>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="popup-content">
+    <!-- if not logged in -->
+    Login to your music server.
+    <a href="login.html">Login</a>
+
+    <!-- if logged in -->
+    <div class="hidden">
+      <p id="songtitle">The beautiful song</p>
+      <p id="songartist">The good artist</p>
+      <p id="songalbum">The fine album</p>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
 </html>
