@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="popup-content">
+    <!-- if not logged in -->
+    Login to your music server.<br />
+    <label for="address">Address</label><br />
+    <input id="address" name="address" type="url" /><br />
+    <label for="username">Username</label><br />
+    <input id="username" name="username" type="text" /><br />
+    <label for="password">Password</label><br />
+    <input id="password" name="password" type="password" /><br />
+
+    <label for="storage">Store connection data</label>
+    <input id="storage" name="storage" type="checkbox" />
+
+    <div id="login" class="button">Login</div>
+
+    <div id="error-content" class="hidden">
+      <p>Can't login login.</p>
+      <p>Try different login data.</p>
+    </div>
+
+    <!-- if logged in -->
+    <div class="hidden">
+      <p id="songtitle">The beautiful song</p>
+      <p id="songartist">The good artist</p>
+      <p id="songalbum">The fine album</p>
+    </div>
+  </div>
+  <!-- TODO: set up bower for using crypto-js client side -->
+  <script type="text/javascript" src="/node_modules/crypto-js/crypto-js.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

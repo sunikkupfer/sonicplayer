@@ -7,21 +7,12 @@
   "icons": {
     "64": "img/icon.png"
   },
-  "permissions": [],
-  "background": {
-    "scripts": [
-      "jslib/browser-polyfill-0.7.0.min.js",
-      "background_script.js"
-    ]
-  },
+  "permissions": ["storage"],
   "browser_action": {
     "default_icon": {
       "64": "img/icon.png"
     },
     "default_title": "Sonic Player",
     "default_popup": "browserAction/index.html"
-  },
-  "options_ui": {
-    "page": "options/index.html"
   }
 }
